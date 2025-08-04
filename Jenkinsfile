@@ -8,13 +8,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'npm ci'
+                bat 'npm ci'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npm run test:one' // or test:all depending on your setup
+                bat 'npm run test:one'
             }
         }
 
