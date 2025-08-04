@@ -10,7 +10,7 @@
     "test:headless": "cross-env HEADLESS=true cucumber-js --config cucumber.config.js",
     "report": "node ./scripts/generate-report.js",
     "debug": "cross-env DEBUG=true HEADLESS=false cucumber-js --config cucumber.config.js --tags '@debug'",
-    "test:one": "cucumber-js --config cucumber.config.js --name 'Create a group and check its detail'",
+    "test:one": "cucumber-js --config cucumber.config.js --name \"Create a group and check its detail\"",
     "debug:one": "cross-env PWDEBUG=1 HEADLESS=false DEBUG=true cucumber-js --config cucumber.config.js --name 'Create a group and check its detail'"
   },
   "repository": {
