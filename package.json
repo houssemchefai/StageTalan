@@ -1,15 +1,36 @@
 {
   "name": "stage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Salesforce login E2E with Playwright & Cucumber",
   "main": "index.js",
-  "scripts": {},
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.config.js",
+    "test:headless": "cross-env HEADLESS=true cucumber-js --config cucumber.config.js",
+    "report": "node ./scripts/generate-report.js",
+    "debug": "cross-env DEBUG=true HEADLESS=false cucumber-js --config cucumber.config.js --tags '@debug'",
+    "test:one": "cucumber-js --config cucumber.config.js --name",
+    "debug:one": "cross-env PWDEBUG=1 HEADLESS=false DEBUG=true cucumber-js --config cucumber.config.js --name"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houssemchefai/Stage.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/houssemchefai/Stage/issues"
+  },
+  "homepage": "https://github.com/houssemchefai/Stage#readme",
+  "dependencies": {
+    "dotenv": "^17.1.0"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.53.1",
-    "@types/node": "^24.0.4"
+    "@cucumber/cucumber": "^11.3.0",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^6.0.0",
+    "open": "^10.2.0",
+    "playwright": "^1.53.2"
   }
 }

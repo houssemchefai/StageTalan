@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "create-and-verify-a-group;create-a-group-and-check-its-detail",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create a group and check its detail",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 398946799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step-definitions\\home.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5844392200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I create a new group called \"newgroup1\"",
+            "match": {
+              "location": "step-definitions\\groups.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5074023000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the correct group title and description",
+            "match": {
+              "location": "step-definitions\\groups.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 947574400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 351550299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-and-verify-a-group",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Create and verify a group",
+    "tags": [],
+    "uri": "features\\groups.feature"
+  }
+]
