@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 398946799
+              "duration": 466138600
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5844392200
+              "duration": 29546007499
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5074023000
+              "duration": 6944012200
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 947574400
+              "duration": 954513799
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 351550299
+              "duration": 379815799
             }
           }
         ],
@@ -75,5 +75,338 @@
     "name": "Create and verify a group",
     "tags": [],
     "uri": "features\\groups.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "home-page-after-login;user-sees-their-name-after-logging-in",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User sees their name after logging in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392553199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step-definitions\\home.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24350401200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "step-definitions\\home.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 898973899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see my username \"Good morning, Houssem. Let's get selling!\"",
+            "match": {
+              "location": "step-definitions\\home.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7759500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 234857800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-page-after-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Home page after login",
+    "tags": [],
+    "uri": "features\\home.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "salesforce-login;user-logs-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User logs in with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 377069299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1791404599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter valid username and password",
+            "match": {
+              "location": "step-definitions\\login.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13701001900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the home page or dashboard",
+            "match": {
+              "location": "step-definitions\\login.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9971935100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 237512000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "salesforce-login;user-fails-to-log-in-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "User fails to log in with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 362527600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step-definitions\\login.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1069787200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I enter username \"wrong@example.com\" and password \"badPass123\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140301200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the login button",
+            "match": {
+              "location": "step-definitions\\login.steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 532148900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see an error message \"Please check your username and password. If you still can't log in, contact your Salesforce administrator.\"",
+            "match": {
+              "location": "step-definitions\\login.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27727700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207513800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "salesforce-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Salesforce Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "opportunities;create-a-new-opportunity-with-details-and-verify-it",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create a new opportunity with details and verify it",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 369172599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step-definitions\\home.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21342404200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I go to the Opportunities tab",
+            "match": {
+              "location": "step-definitions\\opportunities.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6703904299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I create a new opportunity with full details",
+            "match": {
+              "location": "step-definitions\\opportunities.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5860275800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the new opportunity details displayed",
+            "match": {
+              "location": "step-definitions\\opportunities.steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9624600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 327892399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "opportunities",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Opportunities",
+    "tags": [],
+    "uri": "features\\opportunities.feature"
   }
 ]

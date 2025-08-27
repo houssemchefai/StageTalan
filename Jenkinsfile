@@ -20,7 +20,8 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'npm run test:one'
+                // Run only the "User logs in with valid credentials" scenario
+                bat 'npx cucumber-js --config cucumber.config.js --name "User logs in with valid credentials"'
             }
         }
 
