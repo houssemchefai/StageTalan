@@ -25,11 +25,6 @@ pipeline {
             }
         }
 
-        stage('Archive Results') {
-            steps {
-                archiveArtifacts artifacts: 'test-results/**/*.*', fingerprint: true
-            }
-        }
     }
 
     post {
