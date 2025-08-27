@@ -20,11 +20,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                // Run only the "User logs in with valid credentials" scenario
-                bat 'npx cucumber-js --config cucumber.config.js --name "User logs in with valid credentials"'
+                // Run the login scenario in headed Chromium with debugging mode
+                bat 'npx cross-env PWDEBUG=1 npx cucumber-js --config cucumber.config.js --name "User logs in with valid credentials"'
             }
         }
-
     }
 
     post {
